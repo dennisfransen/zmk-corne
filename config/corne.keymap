@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -17,6 +18,15 @@
 &none  &kp A  &kp S  &kp D    &kp F    &kp G        &kp H    &kp J     &kp K      &kp L    &kp SEMI  &none
 &none  &kp Z  &kp X  &kp C    &kp V    &kp B        &kp N    &kp M     &kp COMMA  &kp DOT  &kp FSLH  &none
                      &kp ESC  &kp TAB  &kp SPACE    &kp RET  &kp BSPC  &kp DEL
+            >;
+        };
+
+        media {
+            bindings = <
+&none  &none     &none     &none      &none      &none    &none       &none         &none            &none              &none         &none
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &none       &none         &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &none         &none
+&none  &none     &none     &none      &none      &none    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2       &bt BT_SEL 3  &none
+                           &none      &none      &none    &none       &none         &kp K_MUTE
             >;
         };
     };
