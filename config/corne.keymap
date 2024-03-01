@@ -29,6 +29,15 @@
                            &none      &none      &none    &none       &none         &kp K_MUTE
             >;
         };
+
+        nav {
+            bindings = <
+&none  &none     &none     &none      &none      &none    &kp K_REDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO  &none
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &kp LEFT    &kp DOWN     &kp UP      &kp RIGHT  &kp CAPS    &none
+&none  &none     &none     &none      &none      &none    &kp INSERT  &kp HOME     &kp PG_DN   &kp PG_UP  &kp END     &none
+                           &none      &none      &none    &kp RET     &kp BSPC     &kp DEL
+            >;
+        };
     };
 };
 
