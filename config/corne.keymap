@@ -27,43 +27,11 @@
     };
 
     macros {
-        swe1: swe1 {
+        swe1: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp N1 &kp N3 &kp N4>, <&macro_press>;
-
-            label = "SWE1";
-        };
-
-        swe2: swe2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&sk LEFT_ALT &kp NUMBER_1 &kp NUMBER_3 &kp NUMBER_2>;
-            label = "SWE2";
-        };
-
-        swe3: swe3 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&sk LEFT_ALT &kp N1 &kp N4 &kp NUMBER_8>;
-            label = "SWE3";
-        };
-
-        swe12: swe12 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LEFT_ALT &kp KP_NUMBER_1 &kp KP_NUMBER_3 &kp KP_NUMBER_4>,
-                <&macro_press>;
-
-            label = "SWE12";
-        };
-
-        swe22: swe222 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp KP_NUMBER_1 &kp KP_NUMBER_3 &kp KP_NUMBER_4>;
-            label = "SWE222";
+            bindings = <&kp LA(KP_NUMBER_1) &kp LA(KP_NUMBER_3) &kp LA(KP_NUMBER_4)>;
+            label = "NEW_MACRO";
         };
     };
 
@@ -127,9 +95,9 @@
 
         num {
             bindings = <
-&none  &none      &kp N7  &kp N8   &kp N9  &none        &none  &swe1      &swe2      &swe3     &none     &none
+&none  &none      &kp N7  &kp N8   &kp N9  &none        &none  &none      &none      &none     &none     &none
 &none  &kp SEMI   &kp N4  &kp N5   &kp N6  &kp EQUAL    &none  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &none
-&none  &kp GRAVE  &kp N1  &kp N2   &kp N3  &kp BSLH     &none  &swe12     &swe22     &none     &none     &none
+&none  &kp GRAVE  &kp N1  &kp N2   &kp N3  &kp BSLH     &none  &none      &none      &none     &none     &none
                           &kp DOT  &kp N0  &kp MINUS    &none  &none      &none
             >;
 
