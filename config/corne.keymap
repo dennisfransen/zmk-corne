@@ -42,10 +42,10 @@
 
         nav {
             bindings = <
-&none  &none     &none     &none      &none       &none    &kp K_REDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO  &none
-&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT   &none    &kp LEFT    &kp DOWN     &kp UP      &kp RIGHT  &kp CAPS    &none
-&none  &none     &none     &none      &caps_word  &none    &kp INSERT  &kp HOME     &kp PG_DN   &kp PG_UP  &kp END     &none
-                           &none      &none       &none    &kp RET     &kp BSPC     &kp DEL
+&none  &none     &none     &none      &none       &none    &kp C_AC_REDO  &kp C_AC_PASTE  &kp C_AC_COPY  &kp C_AC_CUT  &kp C_AC_UNDO  &none
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT   &none    &kp LEFT       &kp DOWN        &kp UP         &kp RIGHT     &kp CAPS       &none
+&none  &none     &none     &none      &caps_word  &none    &kp INSERT     &kp HOME        &kp PG_DN      &kp PG_UP     &kp END        &none
+                           &none      &none       &none    &kp RET        &kp BSPC        &kp DEL
             >;
 
             label = "nav";
