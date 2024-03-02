@@ -30,7 +30,8 @@
         swe1: swe1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&sk LEFT_ALT &kp N1 &kp N3 &kp N4>;
+            bindings = <&kp LEFT_ALT &kp N1 &kp N3 &kp N4>, <&macro_press>;
+
             label = "SWE1";
         };
 
