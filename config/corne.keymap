@@ -21,13 +21,8 @@
             label = "ESC_Q";
             #binding-cells = <0>;
             bindings = <&kp Q>, <&kp ESCAPE>;
-        };
 
-        escape_k_tp: escape_k_tp {
-            compatible = "zmk,behavior-tap-dance";
-            label = "ESCAPE_K_TP";
-            #binding-cells = <0>;
-            bindings = <&kp K>, <&kp ESCAPE>;
+            tapping-term-ms = <175>;
         };
     };
 
